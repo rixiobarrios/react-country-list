@@ -21,6 +21,9 @@ world using the [REST Countries](https://restcountries.eu) API.
 
 ## Requirements
 
+
+### Part 1
+
 Make it so that when the page loads (`App.js`), a list of all the countries in
 the world appears on the page. Use `fetch()` inside of `componentDidMount()` to
 query the [REST Countries](https://restcountries.eu) API.
@@ -127,9 +130,15 @@ Here's a sample response of one country:
 ```
 
 
-### Bonus
+### Part 2: Componentize it
 
-Put each country name into its own component. When you click on a component, make another request to search for the country by name. Using the response, display the capital of that country.
+Put each country name into its own component. 
+
+Add functionality so that when a component is clicked, it makes another request to search for the country by name. Using the response, display the capital of that country.
+
+### Part 3: 
+
+
 
 ## Plagiarism
 
