@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import Country from "./Country";
 
 class CountryList extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       countries: []
     };
@@ -23,11 +23,11 @@ class CountryList extends Component {
   }
 
   render() {
-    const countries = this.state.countries.map((country, id) => (
+    const countriesComponents = this.state.countries.map((country, id) => (
       <Country name={country.name} key={id} />
     ));
 
-    return <ul>{this.state.countries && countries}</ul>;
+    return <ul>{this.state.countries && countriesComponents}</ul>;
   }
 }
 
