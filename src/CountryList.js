@@ -28,7 +28,7 @@ class CountryList extends Component {
       return <Country country={country} key={index} />;
     });
 
-    return <ul>{this.state.countries && countryComponents}</ul>;
+    return <ul>{this.state.countries.length > 0 && countryComponents}</ul>;
   }
 }
 
