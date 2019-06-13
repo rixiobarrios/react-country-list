@@ -2,6 +2,42 @@ import React, { Component } from "react";
 import "./App.css";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      countries: []
+    };
+  }
+
+  componentDidMount() {
+    const apiUrl = "https://restcountries.eu/rest/v2";
+    fetch(`${apiUrl}/all`)
+      .then(res => res.json())
+      .then(countryData => {
+        this.setState(
+          prevState => ({
+            countries: countryData
+          }),
+          _ => console.log(this.state.countries)
+        );
+      });
+  }
+
+  getCountryData = e => {
+    e.preventDefault();
+    const apiUrl = "https://restcountries.eu/rest/v2";
+    fetch(`${apiUrl}/all`)
+      .then(res => res.json())
+      .then(countryData => {
+        this.setState(
+          prevState => ({
+            countries: countryData
+          }),
+          _ => console.log(this.state.countries)
+        );
+      });
+  };
+
   render() {
     return (
       <div className="App">
