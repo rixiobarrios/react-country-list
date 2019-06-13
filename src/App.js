@@ -39,9 +39,14 @@ class App extends Component {
   };
 
   render() {
+    const countryComponents = this.state.countries.map((country, index) => {
+      return <li key={index}>{country.name}</li>;
+    });
+
     return (
       <div className="App">
         <h1>Countries of the World</h1>
+        <ul>{this.state.countries && countryComponents}</ul>
       </div>
     );
   }
