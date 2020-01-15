@@ -1,6 +1,14 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
-# React Country List
+## Instructions
+
+1.  Fork and clone this repository into your `sandbox` directory.
+1.  Change into the new directory with `cd react-country-list`.
+1.  Install dependencies by typing `npm install`.
+1.  Open the directory in VS Code with `code .`.
+1.  Back in the Terminal, type `npm run start` to run your development server.
+
+## React Country List
 
 Use AJAX and the component life cycle methods to list all the countries in the
 world using the [REST Countries](https://restcountries.eu) API.
@@ -11,13 +19,6 @@ world using the [REST Countries](https://restcountries.eu) API.
 - Components
 - State and props
 - The component life cycle methods
-
-## Instructions
-
-1. Fork and clone this repository.
-1. Change into the new directory.
-1. Install dependencies.
-1. Fulfill the listed requirements.
 
 ## Requirements
 
